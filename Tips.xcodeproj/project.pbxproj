@@ -21,6 +21,8 @@
 		084E817018643FFD00800CC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084E815218643FFD00800CC6 /* UIKit.framework */; };
 		084E817818643FFD00800CC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 084E817618643FFD00800CC6 /* InfoPlist.strings */; };
 		084E817A18643FFD00800CC6 /* TipsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 084E817918643FFD00800CC6 /* TipsTests.m */; };
+		084E81861864404800800CC6 /* CWHUDTips.m in Sources */ = {isa = PBXBuildFile; fileRef = 084E81851864404800800CC6 /* CWHUDTips.m */; };
+		084E818A1864411500800CC6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 084E81891864411500800CC6 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		084E817518643FFD00800CC6 /* TipsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TipsTests-Info.plist"; sourceTree = "<group>"; };
 		084E817718643FFD00800CC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		084E817918643FFD00800CC6 /* TipsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipsTests.m; sourceTree = "<group>"; };
+		084E81841864404800800CC6 /* CWHUDTips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWHUDTips.h; sourceTree = "<group>"; };
+		084E81851864404800800CC6 /* CWHUDTips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWHUDTips.m; sourceTree = "<group>"; };
+		084E81881864411500800CC6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		084E81891864411500800CC6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,8 @@
 		084E815418643FFD00800CC6 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				084E81871864411500800CC6 /* MBProgressHUD */,
+				084E81831864401400800CC6 /* Classes */,
 				084E815D18643FFD00800CC6 /* CBAppDelegate.h */,
 				084E815E18643FFD00800CC6 /* CBAppDelegate.m */,
 				084E816018643FFD00800CC6 /* Main.storyboard */,
@@ -150,6 +158,24 @@
 				084E817618643FFD00800CC6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		084E81831864401400800CC6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				084E81841864404800800CC6 /* CWHUDTips.h */,
+				084E81851864404800800CC6 /* CWHUDTips.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		084E81871864411500800CC6 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				084E81881864411500800CC6 /* MBProgressHUD.h */,
+				084E81891864411500800CC6 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				084E815B18643FFD00800CC6 /* main.m in Sources */,
+				084E81861864404800800CC6 /* CWHUDTips.m in Sources */,
+				084E818A1864411500800CC6 /* MBProgressHUD.m in Sources */,
 				084E815F18643FFD00800CC6 /* CBAppDelegate.m in Sources */,
 				084E816518643FFD00800CC6 /* CBViewController.m in Sources */,
 			);

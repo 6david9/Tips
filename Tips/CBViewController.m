@@ -7,6 +7,7 @@
 //
 
 #import "CBViewController.h"
+#import "CWHUDTips.h"
 
 @interface CBViewController ()
 
@@ -14,16 +15,22 @@
 
 @implementation CBViewController
 
-- (void)viewDidLoad
+
+#pragma mark - Actions
+
+- (IBAction)showText:(id)sender
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [CWHUDTips showTips:@"自动隐藏的文字"];
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)showLoading:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [CWHUDTips showLoadingTips:@"加载中..."];
+}
+
+- (IBAction)hide:(id)sender
+{
+    [CWHUDTips hideTips];
 }
 
 @end
